@@ -3,22 +3,22 @@
 # -----------------------------------------------------------------------------
 
 title: blank
-first_name: Boqin
+first_name: Yue
 middle_name:
-last_name: Yuan
+last_name: Su
 contact_note:
 description: >-
-  Boqin Yuan works across the LLM stack: AI agent development and evaluation, model training and
-  alignment, and ML systems and inference optimization. MS CS at UC San Diego, previously ML engineer
-  at CambioML (YC S23). Looking for full-time roles starting 2027.
+  Yue Su builds LLM agent systems end to end: the knowledge bases they retrieve from, the platforms
+  they run on, the benchmarks that measure them, and the tracing that shows what they cost.
+  M.S. in AI Engineering at Carnegie Mellon; AI Engineer at Epsilla.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Boqin Yuan, LLM agents, agent evaluation, benchmark, agent memory, model training, preference alignment, ML systems, inference optimization, SGLang, machine learning engineer, UCSD
+keywords: Yue Su, LLM agents, agent infrastructure, knowledge graph, RAG, MCP, agent tracing, cost-aware agents, post-training, machine learning engineer, Carnegie Mellon
 lang: en
 icon: # leave blank for default
 
-url: https://boqiny.github.io
+url: https://yuesu0202.github.io
 baseurl: # blank for user site (username.github.io)
 last_updated: true
 back_to_top: true
@@ -63,7 +63,7 @@ og_image:
 # -----------------------------------------------------------------------------
 
 google_analytics:
-google_site_verification: E1Kst0rdN_0hsLUTANNjMZlOZa8NPvyIxwoAgpsVZFA
+google_site_verification: # add your own from Google Search Console, or leave blank
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -195,8 +195,8 @@ jekyll-archives:
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Yuan]
-  first_name: [Boqin, B.]
+  last_name: [Su]
+  first_name: [Yue, Y.]
 
   style: apa
   locale: en
@@ -297,7 +297,7 @@ enable_google_analytics: false
 enable_cronitor_analytics: false
 enable_pirsch_analytics: false
 enable_openpanel_analytics: false
-enable_google_verification: true
+enable_google_verification: false
 enable_bing_verification: false
 enable_cookie_consent: false
 enable_masonry: true

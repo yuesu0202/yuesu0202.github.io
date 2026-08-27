@@ -2,14 +2,14 @@
 layout: about
 title: About
 permalink: /
-subtitle: Building the evaluation, post-training, and serving infrastructure that makes long-horizon LLM agents work
+subtitle: Building the knowledge bases, platforms, and cost tracing that make LLM agents work
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>b4yuan[at]ucsd.edu</p>
+    <p>yuesu4[at]gmail.com</p>
 
 selected_papers: true
 social: false
@@ -58,22 +58,24 @@ latest_posts:
   }
 </style>
 
-I'm a Master's student in Computer Science at **UC San Diego**, where I work with [Prof. Jishen Zhao](https://cseweb.ucsd.edu/~jzhao/)'s STABLE Lab on **agent memory** and **ML systems**. I spent summer 2026 as a Software Engineer Intern (AI Agent) at [Moody's Analytics](https://www.moodys.com/){:.hl} in San Francisco, working on knowledge iteration and evaluation for their banking agent. Before UCSD, I was the founding Machine Learning Engineer at [CambioML (YC S23)](https://www.cambioml.com/en){:.hl} for over a year, where I trained and deployed [AnyParser](https://github.com/CambioML/any-parser), a vision-language model for document parsing, and built [Energent.ai](https://energent.ai), a computer-use agent sandbox. I studied Mathematics & Computer Science and Statistics at **UIUC** before that.
+I'm an AI Engineer at [Epsilla (YC S23)](https://www.epsilla.com){:.hl} and hold an M.S. in Artificial Intelligence Engineering from **Carnegie Mellon University**. Before that I studied Mathematics and Statistics at **UIUC**.
 
-These days I spend my time on three things:
+I work on agent systems end to end: the knowledge bases they retrieve from, the platforms they run on, the benchmarks that measure them, and the tracing that shows what they cost.
 
-- **Agent evaluation and benchmarks** - benchmarks and diagnostics for **long-horizon** LLM agents: [SkillsBench](https://arxiv.org/abs/2602.12670), [Agents' Last Exam](https://arxiv.org/abs/2606.05405), [AMA-Bench](https://github.com/AMA-Bench/AMA-Bench){:.hl} (ICML 2026), and [memory-probe](https://github.com/boqiny/memory-probe){:.hl}. I also contribute to open-source agentic benchmarks: [Harbor](https://github.com/harbor-framework/harbor){:.hl}, [Terminal-Bench](https://www.tbench.ai/), [QF-Bench](https://qfbench.com/), and [AgenticVBench](https://github.com/PhiloLabs/agentic-vbench).
-- **Model training and alignment** - post-training LLMs and VLMs: supervised fine-tuning, LoRA, and RL alignment with PPO, DPO, and GRPO in PyTorch and DeepSpeed.
-- **ML systems and inference** - serving models under production load with SGLang, vLLM, speculative decoding, quantization, Kubernetes, and AWS. Studied [speculative tool calling](https://github.com/boqiny/spec_tool_call) for agent latency.
+<!-- TODO: expand this into 3-4 bullets — one per theme, each linking to the
+     project or paper that backs it. Keep the {:.hl} class on the links you
+     want in the accent colour. -->
 
-**Graduating Dec 2026, open to full-time roles from Jan 2027.**
+- **Agent infrastructure** - TODO
+- **Knowledge systems and retrieval** - TODO
+- **Agent tracing and cost** - [ClawTrace](https://github.com/epsilla-cloud/clawtrace){:.hl}
 
 <div style="display:flex; flex-wrap:wrap; gap:0.6rem 1.4rem; margin-top:0.5rem; font-size:1rem;">
-  <a href="mailto:b4yuan@ucsd.edu" style="display:flex; align-items:center; gap:0.4rem; text-decoration:none; opacity:0.8;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'"><i class="fa-solid fa-envelope"></i> Email</a>
-  <a href="https://github.com/boqiny" target="_blank" style="display:flex; align-items:center; gap:0.4rem; text-decoration:none; opacity:0.8;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'"><i class="fa-brands fa-github"></i> GitHub</a>
-  <a href="https://linkedin.com/in/boqin-yuan" target="_blank" style="display:flex; align-items:center; gap:0.4rem; text-decoration:none; opacity:0.8;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-  <a href="https://scholar.google.com/citations?user=AglrzBgAAAAJ" target="_blank" style="display:flex; align-items:center; gap:0.4rem; text-decoration:none; opacity:0.8;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'"><i class="ai ai-google-scholar"></i> Google Scholar</a>
-  <a href="/assets/pdf/Boqin_Resume.pdf" target="_blank" style="display:flex; align-items:center; gap:0.4rem; text-decoration:none; opacity:0.8;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'"><i class="fa-solid fa-file-pdf"></i> Resume</a>
+  <a href="mailto:yuesu4@gmail.com" style="display:flex; align-items:center; gap:0.4rem; text-decoration:none; opacity:0.8;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'"><i class="fa-solid fa-envelope"></i> Email</a>
+  <a href="https://github.com/yuesu0202" target="_blank" style="display:flex; align-items:center; gap:0.4rem; text-decoration:none; opacity:0.8;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'"><i class="fa-brands fa-github"></i> GitHub</a>
+  <!-- TODO: replace YOUR-HANDLE with your LinkedIn handle, or delete this line -->
+  <a href="https://linkedin.com/in/YOUR-HANDLE" target="_blank" style="display:flex; align-items:center; gap:0.4rem; text-decoration:none; opacity:0.8;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+  <a href="/assets/pdf/Yue_Su_Resume.pdf" target="_blank" style="display:flex; align-items:center; gap:0.4rem; text-decoration:none; opacity:0.8;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'"><i class="fa-solid fa-file-pdf"></i> Resume</a>
 </div>
 
 <h2 style="margin-top: 2.5rem"><a href="{{ '/experience/' | relative_url }}" style="color: inherit">Recent Experience</a></h2>
@@ -84,50 +86,33 @@ These days I spend my time on three things:
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Boqin Yuan",
-    "url": "https://boqiny.github.io",
-    "email": "mailto:b4yuan@ucsd.edu",
-    "jobTitle": "Machine Learning Engineer",
-    "description": "Machine learning engineer who builds infrastructure for evaluating LLM agents: benchmarks, memory diagnostics, and evaluation harnesses. Also trains and serves models. Graduating December 2026, available for full-time roles from January 2027.",
+    "name": "Yue Su",
+    "url": "https://yuesu0202.github.io",
+    "email": "mailto:yuesu4@gmail.com",
+    "jobTitle": "AI Engineer",
+    "description": "AI engineer building LLM agent systems end to end: knowledge bases, agent platforms, evaluation benchmarks, and cost-aware tracing.",
     "knowsAbout": [
       "LLM agents",
-      "AI agent evaluation",
-      "Benchmark design",
-      "Agent memory",
-      "Large language models",
-      "Vision-language models",
+      "Agent infrastructure",
+      "Knowledge graphs",
+      "Retrieval-augmented generation",
+      "Model Context Protocol (MCP)",
+      "Agent tracing",
+      "Agent evaluation",
       "Model fine-tuning",
-      "Preference alignment",
-      "Direct Preference Optimization (DPO)",
-      "PPO",
-      "GRPO",
-      "RLHF",
       "LoRA",
-      "ZeRO",
-      "Quantization",
-      "vLLM",
-      "Speculative decoding",
-      "Speculative tool calling",
       "Reinforcement learning",
-      "DeepSpeed",
-      "ML systems",
-      "Inference optimization",
-      "SGLang",
-      "Distributed training",
       "PyTorch",
+      "Distributed systems",
       "Kubernetes",
-      "AWS"
+      "AWS",
+      "GCP"
     ],
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "University of California San Diego",
-      "url": "https://ucsd.edu"
-    },
     "alumniOf": [
       {
         "@type": "CollegeOrUniversity",
-        "name": "University of California San Diego",
-        "url": "https://ucsd.edu"
+        "name": "Carnegie Mellon University",
+        "url": "https://www.cmu.edu"
       },
       {
         "@type": "CollegeOrUniversity",
@@ -135,15 +120,8 @@ These days I spend my time on three things:
         "url": "https://illinois.edu"
       }
     ],
-    "seeks": {
-      "@type": "Demand",
-      "name": "Full-time roles starting January 2027 in LLM agent development and evaluation, model training and alignment, or ML systems and inference infrastructure",
-      "availabilityStarts": "2027-01"
-    },
     "sameAs": [
-      "https://github.com/boqiny",
-      "https://linkedin.com/in/boqin-yuan",
-      "https://scholar.google.com/citations?user=AglrzBgAAAAJ"
+      "https://github.com/yuesu0202"
     ]
   }
 </script>
