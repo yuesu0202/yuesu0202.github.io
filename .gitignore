@@ -1,0 +1,23 @@
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby / Bundler
+vendor/
+*.gem
+.bundle/
+
+# Node (for purgecss)
+node_modules/
+
+# Misc
+.DS_Store
+.env*
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.sw?
