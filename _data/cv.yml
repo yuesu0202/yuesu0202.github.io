@@ -12,11 +12,6 @@ cv:
     # - network: LinkedIn
     #   username: # TODO: your LinkedIn handle
 
-  # ---------------------------------------------------------------------------
-  # SCAFFOLDING — the entries below are yours but the `highlights` are empty.
-  # Fill each highlight with the bullets from your resume. This file drives the
-  # /experience page AND the timeline on the homepage.
-  # ---------------------------------------------------------------------------
   sections:
     Education:
       - institution: Carnegie Mellon University
@@ -43,8 +38,10 @@ cv:
         start_date: 2026-02
         summary: ""
         highlights:
-          - "TODO: Stanford SIS bullet"
-          - "TODO: ClawTrace bullet"
+          - "Shipped Stanford SIS end-to-end as a Next.js product over three backends: a biomedical knowledge graph in Google Spanner with 2.5M+ articles, Neon Postgres for all product state, and the Epsilla RAG agent runtime. Exposed the graph to cloud agents through MCP servers with a subgraph cache, and built embedding-based alert subscriptions that match user queries against newly ingested claims."
+          - "Built gene monograph generation on the same graph: a server-side evidence package assembles a gene's top-ranked claims with evidence strength, PMIDs, journals, and linked phenotypes into one shape shared by the writer model and the MCP tools, with monographs persisted as append-only versions under a staleness policy that regenerates lazily so prior versions and share links never break."
+          - "Co-authored and released ClawTrace, an open-source cost-aware tracing platform for LLM agents. Captures LLM calls, tool calls, and sub-agent spans into a streaming pipeline that lands events in a cloud data lake and exposes them as a queryable graph, giving per-step cost and token attribution across 80+ models, with an AI analyst that diagnoses expensive runs and a skill-distillation layer that turns traces into reusable agent instructions."
+          - "Built the shared identity and authorization core every Epsilla product signs in through — stateless org-scoped JWTs, Google sign-in, and idempotent onboarding workflows over a graph-backed multi-tenant store — and worked on HarnessRouter, an OpenAI-compatible API that runs coding agents in isolated sandboxes and returns finished artifacts."
 
       - company: Meituan
         position: Software Engineer Intern
@@ -53,7 +50,10 @@ cv:
         end_date: 2024-08
         summary: Internship
         highlights:
-          - "TODO: document processing pipeline bullet"
+          - "Built a scalable Python microservice for batch PDF processing in production, handling ingestion, processing, and delivery through an API and parallelizing work at the page level so large documents process independently and failures stay isolated."
+          - "Designed the pipeline to be layout-aware rather than OCR-only: PyMuPDF parses text, images, and layout from each PDF while a Detectron2 model detects document structure — titles, paragraphs, tables, and figures — and OCR runs selectively where no text is recoverable, improving extraction accuracy 22% over text-only parsing."
+          - "Fused extracted text with detected structure into a machine-readable document representation of typed blocks with coordinates and text, so downstream search, extraction, and analysis work from structured JSON, and surfaced the same structure as tables and highlighted document views for review."
+          - "Containerized the services with Docker and deployed on Kubernetes with horizontal scaling and rolling updates, reducing end-to-end latency 40% with zero-downtime releases."
 
     Research:
       - company: Mechanical and AI Lab, Carnegie Mellon University
@@ -63,10 +63,10 @@ cv:
         end_date: 2025-12
         summary: ""
         highlights:
-          - "TODO: distributed fault-tolerant system"
-          - "TODO: scientific exploration agent"
-          - "TODO: meta-learning vs finetuning on protein mutation sequences"
-          - "TODO: generative document automation platform"
+          - "<strong>Distributed Fault-Tolerant System</strong> — designed a distributed fault-tolerant system with active/passive replication, Redis deduplication, and heartbeat-driven failover, detecting failures within 1s and auto-recovering within 3s without message loss."
+          - "<strong>AI Agent for Scientific Exploration</strong> — built a scientific exploration agent that analyzes 1,000+ research papers to generate evidence-backed hypotheses, integrating semantic retrieval, multi-step reasoning, self-critique, human feedback, and Google Scholar search, reducing prior-work overlap and weakly supported hypotheses by 40%."
+          - "<strong>Meta-Learning vs. Finetuning on Protein Mutation Sequences</strong> — developed a PyTorch MAML framework for multi-task protein mutation sequence prediction with 16-shot adaptation and modular training across datasets, achieving 46% lower MSE, 10% higher accuracy, and 73% lower training time than finetuning baselines."
+          - "<strong>Generative AI-Powered Document Automation</strong> — built an end-to-end platform converting PDFs into structured slides and narrated videos, with Python REST APIs, a React frontend for upload and status tracking, and AWS Lambda/EC2/S3/SQS orchestration, cutting processing to under 5 minutes per document and compute cost by 35%."
 
       - company: Illinois Geometry Lab
         position: Researcher
@@ -76,7 +76,7 @@ cv:
         end_date: 2024
         summary: ""
         highlights:
-          - "TODO: uniform distribution and planar-graph k-choosability"
+          - "Studied uniform distribution and k-choosability of planar graphs."
 
     Skills:
       - name: Agents & Infrastructure

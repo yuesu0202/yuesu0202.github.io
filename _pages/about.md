@@ -62,13 +62,10 @@ I'm an AI Engineer at [Epsilla (YC S23)](https://www.epsilla.com){:.hl} and hold
 
 I work on agent systems end to end: the knowledge bases they retrieve from, the platforms they run on, the benchmarks that measure them, and the tracing that shows what they cost.
 
-<!-- TODO: expand this into 3-4 bullets — one per theme, each linking to the
-     project or paper that backs it. Keep the {:.hl} class on the links you
-     want in the accent colour. -->
-
-- **Agent infrastructure** - TODO
-- **Knowledge systems and retrieval** - TODO
-- **Agent tracing and cost** - [ClawTrace](https://github.com/epsilla-cloud/clawtrace){:.hl}
+- **Agent infrastructure** - the platforms agents run on: [HarnessRouter](https://www.harnessrouter.ai){:.hl}, an API that runs coding agents in isolated sandboxes and returns finished artifacts, and the shared identity and authorization core every Epsilla product signs in through.
+- **Knowledge systems and retrieval** - the knowledge bases agents retrieve from: Stanford SIS, a science intelligence product over a 2.5M-article biomedical knowledge graph, served to cloud agents through MCP.
+- **Benchmarks and agent memory** - measuring what agents actually do, including [diagnosing retrieval vs. utilization bottlenecks](https://arxiv.org/abs/2603.02473){:.hl} in agent memory.
+- **Agent tracing and cost** - [ClawTrace](https://github.com/epsilla-cloud/clawtrace){:.hl}, an open-source platform that prices every step of an agent run and distills those traces into cheaper agent skills.
 
 <div style="display:flex; flex-wrap:wrap; gap:0.6rem 1.4rem; margin-top:0.5rem; font-size:1rem;">
   <a href="mailto:yuesu4@gmail.com" style="display:flex; align-items:center; gap:0.4rem; text-decoration:none; opacity:0.8;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'"><i class="fa-solid fa-envelope"></i> Email</a>
