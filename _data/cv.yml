@@ -4,7 +4,7 @@ cv:
   email: yuesu4@gmail.com
   location: Pittsburgh, PA
   image: ""
-  summary: Builds LLM agent systems end to end — knowledge bases, platforms, benchmarks, and cost tracing.
+  summary: Builds LLM agent systems end to end — knowledge graphs, evaluations, and cost tracing.
 
   social_networks:
     - network: GitHub
@@ -38,10 +38,19 @@ cv:
         start_date: 2026-02
         summary: ""
         highlights:
-          - "Shipped Stanford SIS end-to-end as a Next.js product over three backends: a biomedical knowledge graph in Google Spanner with 2.5M+ articles, Neon Postgres for all product state, and the Epsilla RAG agent runtime. Exposed the graph to cloud agents through MCP servers with a subgraph cache, and built embedding-based alert subscriptions that match user queries against newly ingested claims."
-          - "Built gene monograph generation on the same graph: a server-side evidence package assembles a gene's top-ranked claims with evidence strength, PMIDs, journals, and linked phenotypes into one shape shared by the writer model and the MCP tools, with monographs persisted as append-only versions under a staleness policy that regenerates lazily so prior versions and share links never break."
-          - "Co-authored and released ClawTrace, an open-source cost-aware tracing platform for LLM agents. Captures LLM calls, tool calls, and sub-agent spans into a streaming pipeline that lands events in a cloud data lake and exposes them as a queryable graph, giving per-step cost and token attribution across 80+ models, with an AI analyst that diagnoses expensive runs and a skill-distillation layer that turns traces into reusable agent instructions."
-          - "Built the shared identity and authorization core every Epsilla product signs in through — stateless org-scoped JWTs, Google sign-in, and idempotent onboarding workflows over a graph-backed multi-tenant store — and worked on HarnessRouter, an OpenAI-compatible API that runs coding agents in isolated sandboxes and returns finished artifacts."
+          - "Shipped Stanford SIS end-to-end as a Next.js research assistant over a biomedical knowledge graph of 3.3M+ PubMed articles in Google Spanner, with Neon Postgres for product state and agents running on the Claude Code harness. Exposed the graph to agents through MCP servers with 7 retrieval tools, and built an app-side review loop that verifies every citation against the graph."
+          - "Built gene monograph generation from ranked, evidence-graded claims, cached and shared across users."
+          - "Co-authored and released ClawTrace, an open-source cost-aware tracing platform for LLM agents. Captures per-step cost and token attribution across LLM calls, tool calls, and sub-agents, compressed into compact TraceCards for skill distillation. Built an AI analyst that diagnoses expensive or failing runs and distills traces into reusable agent skills; cost-attributed prune rules cut regressions from 14 to 5 versus an ablation without them."
+          - "Implemented HarnessRouter, an open-source router for 30 coding-agent harnesses. Moved the DeepSeek Harness onto the runner's shared relay so provider API keys never reach the agent, and fixed self-hosted model failures by stripping oversized max_tokens and surfacing providers' real refusal reasons, verified on a live vLLM server."
+          - "Built the shared identity and authorization core every Epsilla product signs in through — stateless org-scoped JWTs, Google sign-in, and idempotent onboarding workflows over a graph-backed multi-tenant store."
+
+      - company: Handshake AI
+        position: AI Specialist
+        location: Remote
+        start_date: 2026-07
+        summary: Contract
+        highlights:
+          - "Design and run evaluations of frontier coding agents on long-horizon tasks, measuring behavior including approval-request frequency; red-teamed agent policy boundaries on a simulated social platform and documented reproducible failure cases."
 
       - company: Meituan
         position: Software Engineer Intern

@@ -214,9 +214,10 @@
       <p class="tl-role">AI Engineer</p>
       <p class="tl-company"><a href="https://www.epsilla.com" target="_blank">Epsilla (YC S23)</a> · Internship</p>
       <p class="tl-meta">Feb 2026 - Present · Remote</p>
-      <p class="tl-proj">Shipped <strong>Stanford SIS</strong> end-to-end as a Next.js product over three backends: a biomedical knowledge graph in <strong>Google Spanner</strong> with 2.5M+ articles, Neon Postgres for all product state, and the Epsilla RAG agent runtime. Exposed the graph to cloud agents through <strong>MCP servers</strong> with a subgraph cache, and built embedding-based alert subscriptions that match user queries against newly ingested claims. Built gene monograph generation on the same graph, assembling ranked claims with evidence strength into an evidence package shared by the writer model and the MCP tools, persisted as append-only versions so prior links never break.</p>
-      <p class="tl-proj">Co-authored and released <a href="https://github.com/epsilla-cloud/clawtrace" target="_blank"><strong>ClawTrace</strong></a>, an open-source <strong>cost-aware tracing platform</strong> for LLM agents. Captures LLM calls, tool calls, and sub-agent spans into a streaming pipeline that lands events in a cloud data lake and exposes them as a queryable graph, giving per-step cost and token attribution across 80+ models, with an AI analyst that diagnoses expensive runs and a skill-distillation layer that turns traces into reusable agent instructions.</p>
-      <p class="tl-proj">Built the shared <strong>identity and authorization core</strong> every Epsilla product signs in through - stateless org-scoped JWTs, Google sign-in, and idempotent onboarding workflows over a graph-backed multi-tenant store - and worked on <strong>HarnessRouter</strong>, an OpenAI-compatible API that runs coding agents in isolated sandboxes and returns finished artifacts.</p>
+      <p class="tl-proj">Shipped <strong>Stanford SIS</strong> end-to-end as a Next.js research assistant over a biomedical knowledge graph of 3.3M+ PubMed articles in <strong>Google Spanner</strong>, with Neon Postgres for product state and agents running on the Claude Code harness. Exposed the graph to agents through <strong>MCP servers</strong> with 7 retrieval tools, and built an app-side review loop that verifies every citation against the graph before an answer reaches a researcher. Built gene monograph generation from ranked, evidence-graded claims, cached and shared across users.</p>
+      <p class="tl-proj">Co-authored and released <a href="https://github.com/epsilla-cloud/clawtrace" target="_blank"><strong>ClawTrace</strong></a>, an open-source <strong>cost-aware tracing platform</strong> for LLM agents. Captures per-step cost and token attribution across LLM calls, tool calls, and sub-agents, compressed into compact TraceCards for skill distillation. Built an AI analyst that diagnoses expensive or failing runs and distills traces into reusable agent skills; cost-attributed prune rules cut regressions from 14 to 5 versus an ablation without them.</p>
+      <p class="tl-proj">Implemented <a href="https://github.com/HarnessRouter/harnessrouter" target="_blank"><strong>HarnessRouter</strong></a>, an open-source router that puts 30 coding-agent harnesses behind one API. Moved the DeepSeek Harness onto the runner's shared relay so <strong>provider API keys never reach the agent</strong>, re-verified across OpenRouter, Vercel, and TokenRouter, and fixed self-hosted model failures by stripping oversized <code>max_tokens</code> and surfacing providers' real refusal reasons, verified on a live vLLM server.</p>
+      <p class="tl-proj">Built the shared <strong>identity and authorization core</strong> every Epsilla product signs in through - stateless org-scoped JWTs, Google sign-in, and idempotent onboarding workflows over a graph-backed multi-tenant store.</p>
       <p class="tl-pubs-label">Publications</p>
       <ul class="tl-pubs">
         <li><a href="https://arxiv.org/abs/2604.23853" target="_blank">ClawTrace: Cost-Aware Tracing for LLM Agent Skill Distillation</a> <span class="tl-venue">· ACM CAIS 2026 Workshop on Agent Skills (Oral)</span></li>
@@ -229,10 +230,10 @@
     <div class="tl-rail"><span class="tl-dot"></span></div>
     <div class="tl-logo"><img src="{{ '/assets/img/logos/handshake-logo.jpeg' | relative_url }}" alt="Handshake AI"></div>
     <div class="tl-body">
-      <p class="tl-role">AI Specialist </p>
+      <p class="tl-role">AI Specialist</p>
       <p class="tl-company">Handshake AI · Contract</p>
-      <p class="tl-meta">2026 - Present · Remote</p>
-      <p class="tl-desc">Design and run evaluations of <strong>frontier coding agents</strong> on long-horizon software tasks, measuring behavior under extended autonomous execution - including how often agents interrupt to request human approval, a usability metric for autonomous coding workflows distinct from task success rate.</p>
+      <p class="tl-meta">Jul 2026 - Present · Remote</p>
+      <p class="tl-desc">Design and run evaluations of <strong>frontier coding agents</strong> on long-horizon software tasks, measuring behavior under extended autonomous execution - including how often agents interrupt to request human approval, a usability metric distinct from task success rate. Red-teamed agent policy boundaries on a simulated social platform and documented reproducible failure cases.</p>
     </div>
   </div>
 

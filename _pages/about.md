@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Building the knowledge bases, platforms, and cost tracing that make LLM agents work
+subtitle: Building the knowledge graphs, evaluations, and cost tracing that make LLM agents work
 
 profile:
   align: right
@@ -60,11 +60,11 @@ latest_posts:
 
 I'm an AI Engineer at [Epsilla (YC S23)](https://www.epsilla.com){:.hl} and hold an M.S. in Artificial Intelligence Engineering from **Carnegie Mellon University**. Before that I studied Mathematics and Statistics at **UIUC**.
 
-I work on agent systems end to end: the knowledge bases they retrieve from, the platforms they run on, the benchmarks that measure them, and the tracing that shows what they cost.
+I build agent systems end to end: the knowledge graphs they retrieve from, the evaluations that measure them, and the tracing that shows what they cost, along with the backend services around them, deployed on AWS and GCP.
 
-- **Agent infrastructure** - the platforms agents run on: [HarnessRouter](https://www.harnessrouter.ai){:.hl}, an API that runs coding agents in isolated sandboxes and returns finished artifacts, and the shared identity and authorization core every Epsilla product signs in through.
-- **Knowledge systems and retrieval** - the knowledge bases agents retrieve from: Stanford SIS, a science intelligence product over a 2.5M-article biomedical knowledge graph, served to cloud agents through MCP.
-- **Benchmarks and agent memory** - measuring what agents actually do, including [diagnosing retrieval vs. utilization bottlenecks](https://arxiv.org/abs/2603.02473){:.hl} in agent memory.
+- **Agent infrastructure** - the platforms agents run on: [HarnessRouter](https://www.harnessrouter.ai){:.hl}, an open-source router that puts 30 coding-agent harnesses behind one API (I moved the DeepSeek Harness onto the shared relay that keeps provider keys out of the agent), and the shared identity and authorization core every Epsilla product signs in through.
+- **Knowledge systems and retrieval** - the knowledge graphs agents retrieve from: Stanford SIS, a research assistant over a 3.3M+ article PubMed knowledge graph, served to agents through MCP, with a review loop that checks every citation against the graph.
+- **Evaluation and agent memory** - measuring what agents actually do: evaluating frontier coding agents on long-horizon tasks at Handshake AI, and [diagnosing retrieval vs. utilization bottlenecks](https://arxiv.org/abs/2603.02473){:.hl} in agent memory.
 - **Agent tracing and cost** - [ClawTrace](https://github.com/epsilla-cloud/clawtrace){:.hl}, an open-source platform that prices every step of an agent run and distills those traces into cheaper agent skills.
 
 <div style="display:flex; flex-wrap:wrap; gap:0.6rem 1.4rem; margin-top:0.5rem; font-size:1rem;">
@@ -86,7 +86,7 @@ I work on agent systems end to end: the knowledge bases they retrieve from, the 
     "url": "https://yuesu0202.github.io",
     "email": "mailto:yuesu4@gmail.com",
     "jobTitle": "AI Engineer",
-    "description": "AI engineer building LLM agent systems end to end: knowledge bases, agent platforms, evaluation benchmarks, and cost-aware tracing.",
+    "description": "AI engineer building LLM agent systems end to end: knowledge graphs, agent infrastructure, evaluations, and cost-aware tracing.",
     "knowsAbout": [
       "LLM agents",
       "Agent infrastructure",
