@@ -206,18 +206,17 @@
 
 <div class="tl">
 
-  <div class="tl-item tl-item--current">
-    <div class="tl-date">2026 - present</div>
+  <div class="tl-item">
+    <div class="tl-date">2026</div>
     <div class="tl-rail"><span class="tl-dot"></span></div>
     <div class="tl-logo"><img src="{{ '/assets/img/logos/epsilla-logo.png' | relative_url }}" alt="Epsilla"></div>
     <div class="tl-body">
       <p class="tl-role">AI Engineer</p>
       <p class="tl-company"><a href="https://www.epsilla.com" target="_blank">Epsilla (YC S23)</a> · Internship</p>
-      <p class="tl-meta">Feb 2026 - Present · Remote</p>
-      <p class="tl-proj">Shipped <strong>Stanford SIS</strong> end-to-end as a Next.js research assistant over a biomedical knowledge graph of 3.3M+ PubMed articles in <strong>Google Spanner</strong>, with Neon Postgres for product state and agents running on the Claude Code harness. Exposed the graph to agents through <strong>MCP servers</strong> with 7 retrieval tools, and built an app-side review loop that verifies every citation against the graph before an answer reaches a researcher. Built gene monograph generation from ranked, evidence-graded claims, cached and shared across users.</p>
-      <p class="tl-proj">Co-authored and released <a href="https://github.com/epsilla-cloud/clawtrace" target="_blank"><strong>ClawTrace</strong></a>, an open-source <strong>cost-aware tracing platform</strong> for LLM agents. Captures per-step cost and token attribution across LLM calls, tool calls, and sub-agents, compressed into compact TraceCards for skill distillation. Built an AI analyst that diagnoses expensive or failing runs and distills traces into reusable agent skills; cost-attributed prune rules cut regressions from 14 to 5 versus an ablation without them.</p>
-      <p class="tl-proj">Implemented <a href="https://github.com/HarnessRouter/harnessrouter" target="_blank"><strong>HarnessRouter</strong></a>, an open-source router that puts 30 coding-agent harnesses behind one API. Moved the DeepSeek Harness onto the runner's shared relay so <strong>provider API keys never reach the agent</strong>, re-verified across OpenRouter, Vercel, and TokenRouter, and fixed self-hosted model failures by stripping oversized <code>max_tokens</code> and surfacing providers' real refusal reasons, verified on a live vLLM server.</p>
-      <p class="tl-proj">Built the shared <strong>identity and authorization core</strong> every Epsilla product signs in through - stateless org-scoped JWTs, Google sign-in, and idempotent onboarding workflows over a graph-backed multi-tenant store.</p>
+      <p class="tl-meta">Feb 2026 - Oct 2026 · Remote</p>
+      <p class="tl-proj">Shipped <strong>Gene Quest</strong>, a Next.js <strong>gene research agent</strong> with agents running on the Claude Code harness over a <strong>Google Spanner</strong> knowledge graph of 3.3M+ PubMed articles, and Neon Postgres for product state. Gave the agents tool access to the graph through <strong>MCP servers</strong> with 7 retrieval tools, and built an app-side review loop that verifies every citation against the graph before an answer reaches a researcher. Built gene monograph generation from ranked, evidence-graded claims, cached and shared across users.</p>
+      <p class="tl-proj">Co-authored and released <a href="https://github.com/epsilla-cloud/clawtrace" target="_blank"><strong>ClawTrace</strong></a>, an open-source <strong>cost-aware tracing platform</strong> for multi-step and multi-agent LLM runs. Captures per-step cost and token attribution across LLM calls, tool calls, and <strong>sub-agents</strong>, compressed into compact TraceCards for skill distillation. Built an AI analyst that diagnoses expensive or failing runs and distills traces into reusable agent skills; cost-attributed prune rules cut regressions from 14 to 5 versus an ablation without them.</p>
+      <p class="tl-proj">Contributed to <a href="https://github.com/HarnessRouter/harnessrouter" target="_blank"><strong>HarnessRouter</strong></a>, an open-source router that puts <strong>30 coding-agent harnesses</strong> behind one API. Moved the DeepSeek Harness onto the runner's shared relay so <strong>provider API keys never reach the agent</strong>, re-verified across OpenRouter, Vercel, and TokenRouter, and fixed self-hosted model failures by stripping oversized <code>max_tokens</code> and surfacing providers' real refusal reasons, verified on a live vLLM server.</p>
       <p class="tl-pubs-label">Publications</p>
       <ul class="tl-pubs">
         <li><a href="https://arxiv.org/abs/2604.23853" target="_blank">ClawTrace: Cost-Aware Tracing for LLM Agent Skill Distillation</a> <span class="tl-venue">· ACM CAIS 2026 Workshop on Agent Skills (Oral)</span></li>
@@ -225,15 +224,15 @@
     </div>
   </div>
 
-  <div class="tl-item tl-item--current">
-    <div class="tl-date">2026 - present</div>
+  <div class="tl-item">
+    <div class="tl-date">2026</div>
     <div class="tl-rail"><span class="tl-dot"></span></div>
     <div class="tl-logo"><img src="{{ '/assets/img/logos/handshake-logo.jpeg' | relative_url }}" alt="Handshake AI"></div>
     <div class="tl-body">
       <p class="tl-role">AI Specialist</p>
-      <p class="tl-company">Handshake AI · Contract</p>
-      <p class="tl-meta">Jul 2026 - Present · Remote</p>
-      <p class="tl-desc">Design and run evaluations of <strong>frontier coding agents</strong> on long-horizon software tasks, measuring behavior under extended autonomous execution - including how often agents interrupt to request human approval, a usability metric distinct from task success rate. Red-teamed agent policy boundaries on a simulated social platform and documented reproducible failure cases.</p>
+      <p class="tl-company">Handshake AI · Part-time</p>
+      <p class="tl-meta">Jul 2026 - Nov 2026 · Remote</p>
+      <p class="tl-desc">Designed and ran evaluations of <strong>frontier coding agents</strong> on long-horizon software tasks, measuring behavior under extended autonomous execution - including how often agents interrupt to request human approval, a usability metric distinct from task success rate. Red-teamed <strong>agent policy boundaries</strong> on a simulated social platform and documented reproducible failure cases.</p>
     </div>
   </div>
 
@@ -263,8 +262,8 @@
       <p class="tl-role">Research Assistant - Mechanical and AI Lab</p>
       <p class="tl-company"><a href="https://www.cmu.edu" target="_blank">Carnegie Mellon University</a></p>
       <p class="tl-meta">Nov 2024 - Dec 2025 · Pittsburgh, PA</p>
+      <p class="tl-proj"><strong>AI Agent for Scientific Exploration</strong>: Built a scientific exploration agent that analyzes 1,000+ research papers to generate evidence-backed hypotheses, integrating semantic retrieval, multi-step reasoning, self-critique, human feedback, and Google Scholar API search, reducing prior-work overlap and weakly supported hypotheses by 40%.</p>
       <p class="tl-proj"><strong>Distributed Fault-Tolerant System</strong>: Designed distributed fault-tolerant system with active/passive replication, Redis deduplication, and heartbeat-driven failover, detecting failures within 1s, and auto-recovering within 3s without message loss.</p>
-      <p class="tl-proj"><strong>AI Agent for Scientific Exploration</strong>: Built scientific exploration agent that analyzes 1,000+ research papers to generate evidence-backed hypotheses, integrating semantic retrieval, multi-step reasoning, self-critique, human feedback, and Google Scholar API search, reducing prior-work overlap and weakly supported hypotheses by 40%.</p>
       <p class="tl-proj"><strong>Meta-Learning vs Finetune on Protein Mutation Sequence</strong>: Developed a PyTorch MAML framework for multi-task protein mutation sequence prediction with 16-shot adaptation, modular training across multiple protein datasets, and input sequence encoding, achieving 46% lower MSE, 10% higher accuracy, and 73% lower training time than finetuning baselines.</p>
       <p class="tl-proj"><strong>Generative AI-Powered Document Automation</strong>: Built end-to-end platform that converts PDFs into structured PowerPoint slides and narrated videos, with Python REST APIs React frontend for upload/status tracking, and AWS Lambda, EC2, S3, and SQS orchestration to reduce processing time to under 5 minutes per document and compute cost by 35%.</p>
       <p class="tl-pubs-label">Publications</p>

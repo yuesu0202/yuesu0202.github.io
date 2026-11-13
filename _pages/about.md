@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Building the knowledge graphs, evaluations, and cost tracing that make LLM agents work
+subtitle: Building agentic and multi-agent systems, and the tracing and evaluation that make them trustworthy
 
 profile:
   align: right
@@ -58,14 +58,14 @@ latest_posts:
   }
 </style>
 
-I'm an AI Engineer at [Epsilla (YC S23)](https://www.epsilla.com){:.hl} and hold an M.S. in Artificial Intelligence Engineering from **Carnegie Mellon University**. Before that I studied Mathematics and Statistics at **UIUC**.
+I build agentic AI systems: LLM agents that use tools, act over real knowledge, run across many coding-agent harnesses, and leave traces you can debug and price. I hold an M.S. in Artificial Intelligence Engineering from **Carnegie Mellon University** and studied Mathematics and Statistics at **UIUC**.
 
-I build agent systems end to end: the knowledge graphs they retrieve from, the evaluations that measure them, and the tracing that shows what they cost, along with the backend services around them, deployed on AWS and GCP.
+Most recently I was an AI Engineer at [Epsilla (YC S23)](https://www.epsilla.com){:.hl}, building agent products and infrastructure, and an AI Specialist at Handshake AI, evaluating frontier coding agents.
 
-- **Agent infrastructure** - the platforms agents run on: [HarnessRouter](https://www.harnessrouter.ai){:.hl}, an open-source router that puts 30 coding-agent harnesses behind one API (I moved the DeepSeek Harness onto the shared relay that keeps provider keys out of the agent), and the shared identity and authorization core every Epsilla product signs in through.
-- **Knowledge systems and retrieval** - the knowledge graphs agents retrieve from: Stanford SIS, a research assistant over a 3.3M+ article PubMed knowledge graph, served to agents through MCP, with a review loop that checks every citation against the graph.
-- **Evaluation and agent memory** - measuring what agents actually do: evaluating frontier coding agents on long-horizon tasks at Handshake AI, and [diagnosing retrieval vs. utilization bottlenecks](https://arxiv.org/abs/2603.02473){:.hl} in agent memory.
-- **Agent tracing and cost** - [ClawTrace](https://github.com/epsilla-cloud/clawtrace){:.hl}, an open-source platform that prices every step of an agent run and distills those traces into cheaper agent skills.
+- **Tool-using agents over knowledge** - Gene Quest, a gene research agent running on the Claude Code harness. It reaches a 3.3M+ article PubMed knowledge graph through MCP servers with 7 retrieval tools, and a review loop checks every citation against the graph before a researcher sees the answer.
+- **Routing across coding agents** - [HarnessRouter](https://www.harnessrouter.ai){:.hl}, an open-source router that puts 30 coding-agent harnesses behind one API. I moved the DeepSeek Harness onto the shared relay that keeps provider keys out of the agent, and fixed self-hosted model failures.
+- **Tracing multi-agent runs** - [ClawTrace](https://github.com/epsilla-cloud/clawtrace){:.hl}, an open-source platform that attributes cost and tokens to every LLM call, tool call, and sub-agent in a run, diagnoses expensive or failing runs, and distills traces into reusable agent skills.
+- **Evaluating agent behavior** - long-horizon evaluations and red-teaming of frontier coding agents at Handshake AI, and [diagnosing retrieval vs. utilization bottlenecks](https://arxiv.org/abs/2603.02473){:.hl} in agent memory.
 
 <div style="display:flex; flex-wrap:wrap; gap:0.6rem 1.4rem; margin-top:0.5rem; font-size:1rem;">
   <a href="mailto:yuesu4@gmail.com" style="display:flex; align-items:center; gap:0.4rem; text-decoration:none; opacity:0.8;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'"><i class="fa-solid fa-envelope"></i> Email</a>
@@ -86,9 +86,12 @@ I build agent systems end to end: the knowledge graphs they retrieve from, the e
     "url": "https://yuesu0202.github.io",
     "email": "mailto:yuesu4@gmail.com",
     "jobTitle": "AI Engineer",
-    "description": "AI engineer building LLM agent systems end to end: knowledge graphs, agent infrastructure, evaluations, and cost-aware tracing.",
+    "description": "AI engineer building agentic and multi-agent LLM systems: tool-using agents, coding-agent harnesses, agent tracing, and agent evaluation.",
     "knowsAbout": [
       "LLM agents",
+      "Agentic AI",
+      "Multi-agent systems",
+      "Coding agents",
       "Agent infrastructure",
       "Knowledge graphs",
       "Retrieval-augmented generation",

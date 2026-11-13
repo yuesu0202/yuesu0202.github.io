@@ -8,9 +8,8 @@ middle_name:
 last_name: Su
 contact_note:
 description: >-
-  Yue Su builds LLM agent systems end to end: the knowledge bases they retrieve from, the platforms
-  they run on, the benchmarks that measure them, and the tracing that shows what they cost.
-  M.S. in AI Engineering at Carnegie Mellon; AI Engineer at Epsilla.
+  Yue Su builds agentic and multi-agent LLM systems: tool-using agents over knowledge graphs,
+  coding-agent harnesses, agent tracing, and agent evaluation. M.S. in AI Engineering at Carnegie Mellon.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
