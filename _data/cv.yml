@@ -36,7 +36,7 @@ cv:
         location: Remote
         url: https://www.epsilla.com
         start_date: 2026-02
-        end_date: 2026-10
+        end_date: 2026-11
         summary: Internship
         highlights:
           - "Shipped Gene Quest, a Next.js gene research agent with agents running on the Claude Code harness over a Google Spanner knowledge graph of 3.3M+ PubMed articles, and Neon Postgres for product state. Gave the agents tool access to the graph through MCP servers with 7 retrieval tools, and built an app-side review loop that verifies every citation against the graph."
